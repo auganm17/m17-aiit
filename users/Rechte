@@ -1,0 +1,31 @@
+#Multiuser/task
+
+Unter Multiuser war ursprünglich etwas anders geplant. Früher hatte man einen *Haupt*PC von dem mehrere Arbeitspätze (mit eigene Bildschirme, Tastaturen, etc) zu erreichen waren.
+Unter Multitask (Mehrprozessbetrieb) versteht man die Fähigkeit eines Betriebssystems mehrere Aufgaben (tasks) nebenläufig auszuführen. Im allgemeinen bietet der prozessor hierzu auch unterstützende Hardwarestrukturen. Der 'beste' Prozessor von Intel derzeit hat 18 Kerne somit kann er 18 Aufgaben problemlos gleichzeitig ausführen. Jedoch heißt das nicht das er nur 18 Aufgaben gleichzeitig ausführen kann. Er kann auch mehr als 18 Aufgaben gleichzeitig erledigen jedoch führt er dies dann langsamer aus.
+
+#Rechte
+
+##Bezeichnungen der Rechte unter Linux, macOs..... :
+
+Eigentümer: User (U)
+Gruppe: Group (G)
+Alle anderen: Others (O)
+
+##Im allgemeinen gibt es 3 Rechte die es zu verteilen gibt:
+
+r.....read.....lesen
+w.....write.....schreiben (modifizieren, anlegen)
+x.....execute.....ausführen (in das Verzeichniss "hineingehen"
+
+Beispiel:
+
+UUU   GGG   OOO            Dateirechte: 0=nichtgegeben
+rwx   rwx   rwx                         1=erteilt
+
+Dateirechte: 110 100 000
+
+Das bedeutet so viel wie: der User hat die Rechte R+W          d.h: der User darf z.B: die Datei lesen und sie modifizieren (ändern).
+                          die Group hat die Rechte R           d.h: die Gruppe darf z.B: die Datei lesen aber nicht modifizieren (ändern).
+                          Alle anderen haben keine Rechte      d.h: alle anderen dürfen z.B: die Datei weder lesen noch ändern.
+                     
+Das gleiche gilt zum Beispiel auch für Verzeichnisse, Programme, etc.
